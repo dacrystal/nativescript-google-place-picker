@@ -1,0 +1,35 @@
+android {
+  productFlavors {
+    "nativescript-gsm-place-picker" {
+      dimension "nativescript-gsm-place-picker"
+    }
+  }
+}
+
+// buildscript {
+//     repositories {
+//         jcenter()
+//     }
+    
+//     dependencies {
+//         classpath 'com.android.tools.build:gradle:2.1.0'
+//         // classpath "com.google.gms:google-services:3.0.0"
+//     }
+// }
+
+
+dependencies {
+    // [START gms_compile]
+    def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : '+'
+	compile "com.google.android.gms:play-services-places:$googlePlayServicesVersion"
+	// compile "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+    // [END gms_compile]
+}
+
+
+// allprojects {
+//     repositories {
+//         jcenter()
+//     }
+// }
+
