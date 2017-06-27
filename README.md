@@ -51,14 +51,14 @@ project.ext {
 
 In the main script of your app `app.js`, use the following to add the API key (providing your key in place of `PUT_API_KEY_HERE`)
 
-```
+```js
 if(application.ios) {
   PlacePicker.iosProvideAPIKey("PUT_API_KEY_HERE");
 }
 ```
 
 If you are using Angular, you need to modify the `app.module.ts` as follows:
-```
+```js
 import * as platform from "platform";
 import {PlacePicker} from "nativescript-google-place-picker"
 ....
